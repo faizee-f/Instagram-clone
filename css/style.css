@@ -1,0 +1,396 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #fafafa;
+    }
+    
+    .navmain {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 55px;
+        background-color: #fff;
+        padding-top: 5px;
+        border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+    
+    .container {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 30%;
+    }
+    
+    .logo img {
+        width: 150px;
+        height: 50px;
+    }
+    
+    .searchbar {
+        width: 25%;
+        background-color: #fafafa;
+    }
+    
+    .search {
+        display: flex;
+        justify-content: center;
+        border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+        padding: 3px;
+        border-radius: 5px;
+    }
+    
+    .search span {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+    
+    .search input {
+        border: none;
+        width: 50px;
+        background-color: #fafafa;
+    }
+    
+    .icontab {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .proicon {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+    }
+    
+    .proicon img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+    
+    .mainfeed {
+        width: 100%;
+        margin-top: 80px;
+        height: 2000px;
+    }
+    
+    .mainbody {
+        width: 60%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .storyfeedmain {
+        width: 65%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .storyfeed {
+        width: 100%;
+    }
+    
+    .story {
+        width: 100%;
+        border-radius: 5px;
+        height: 130px;
+        background-color: white;
+        border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+    
+    .storyhold {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+    
+    .statushold {
+        height: auto;
+        align-items: center;
+        padding: 20px 0 0 20px;
+    }
+    
+    .profile {
+        width: 60px;
+        height: 60px;
+        border: 2px solid #C72E90;
+        border-radius: 50px;
+    }
+    
+    .profile img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        padding: 2px;
+    }
+    
+    .username {
+        margin-top: 5px;
+    }
+    
+    .username h5 {
+        font-weight: lighter;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .feed {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+    
+    .feedcontainer {
+        width: 100%;
+        height: auto;
+    }
+    
+    .feedhead {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+    
+    .feedprofile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px solid #C72E90;
+        margin-right: 20px;
+    }
+    
+    .feedhead h3 {
+        width: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    
+    .feedprofile img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        padding: 2px;
+    }
+    
+    .lcss {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .lcs {
+        display: flex;
+    }
+    
+    .lico {
+        margin-left: 20px;
+    }
+    
+    .save {
+        margin-right: 20px;
+    }
+    
+    .commentsession {
+        margin-left: 20px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        display: flex;
+        font-size: small;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    }
+    
+    .feedfooter {
+        margin-left: 20px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .ffleft {
+        display: flex;
+    }
+    
+    .ffleft input {
+        margin-left: 20px;
+        width: 70%;
+    }
+    
+    .feedfooter input {
+        border: none;
+        width: 50%;
+    }
+    
+    .ffright {
+        margin-right: 20px;
+        color: #B3DFFC;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: medium;
+    }
+    
+    .feedimage {
+        width: 100%;
+    }
+    
+    .feedimage img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .lcss {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .suggestion {
+        position: sticky;
+        margin-left: 30px;
+        top: 100px;
+        width: 35%;
+        height: 400px;
+    }
+    
+    .suggcontainer {
+        width: 100%;
+        margin: auto;
+        height: 350px;
+    }
+    
+    .proswitch {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .proswitch1 {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(121, 121, 121);
+    }
+    
+    .prosuggicon {
+        width: 60px;
+        height: 60px;
+        border: 2px solid red;
+        padding: 1px;
+        border-radius: 50px;
+    }
+    
+    .prosuggicon img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+    }
+    
+    .nameusername {
+        align-items: center;
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    
+    .nameusername h4 {
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: 13px;
+    }
+    
+    .switch {
+        width: 15%;
+        color: #0999F6;
+        font-weight: normal;
+    }
+    
+    .prosuggiconbottom {
+        width: 40px;
+        height: 40px;
+        border: 2px solid red;
+        padding: 1px;
+        border-radius: 50px;
+        display: flex;
+    }
+    
+    .prosuggiconbottom img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+    }
+    
+    .proswitchbottom {
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nameusernamebottom {
+        align-items: center;
+        width: 65%;
+    }
+    
+    .nameusernamebottom h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    
+    .nameusernamebottom h4 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    
+    .suggbottom {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        color: rgb(158, 158, 158);
+    }
+    
+    .suggbottom p {
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    
+    .suggbottom h5 {
+        margin-top: 10px;
+        font-weight: normal;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    .commentsession h3,
+    .commentsession h4,
+    .commentsession h6 {
+        margin-bottom: 5px;
+    }
